@@ -359,10 +359,10 @@ function l10n_drupal_save_string($value = NULL, $context = NULL, $file = NULL, $
   // Strip all slashes from string.
   $value = stripcslashes($value);
 
-  if (!isset($files[$file])) {
+//  if (!isset($files[$file])) {
     // Get file ID for saving, locally cache.
     $files[$file] = l10n_drupal_save_file(NULL, $file);
-  }
+//  }
 
   // Value set but empty. Mark error on empty translatable string. Only trim
   // for empty string checking, since we should store leading/trailing
